@@ -7,7 +7,54 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
     </head> 
 
+    <style>
+        .titulo{
+            border: black solid 1px;
+            font-size:small;
+            background-color:dodgerblue;
+        }
+
+        .btn1{
+            color: black;
+            background-color:cornflowerblue;
+        }
+
+        .btn2{
+            color: black;
+            background-color:dodgerblue;
+        }
+    </style>
+
     <body>
-        
+        <div class="titulo text-center">
+            <h1>Dados do jogo</h1>
+        </div>
+            
+        </div>
+
+        <div class="container">
+            <form class="formulario" method="post" action="#">
+                <div class="mb-3">
+                    <label for="txtNome" class="form-label" id="lblNome">Nome</label>
+                    <input type="text" class="form-control" id="txtNome">
+                </div>
+                <div class="mb-3">
+                    <label for="txtValor" class="form-label" id="lblValor">Valor</label>
+                    <input type="text" class="form-control" id="txtValor">
+                </div>
+                <div class="mb-3">
+                    <label for="txtGenero" class="form-label" id="lblGenero">Gênero</label>
+                    <input type="text" class="form-control" id="txtGenero">
+                </div>
+                <div class="mb-3">
+                    <label for="txtClasEtaria" class="form-label" id="lblClasEtaria">Classificação Etária</label>
+                    <input type="text" class="form-control" id="txtClasEtaria">
+                </div>
+                <div class="mb-3 text-center">
+                    <input type="submit" class="btn1 btn btn-primary" value="LIMPAR">
+                    <input type="submit" class="btn2 btn btn-primary" value="ENVIAR">
+                </div>
+            </form>
+        </div>
     </body>
     </html>
