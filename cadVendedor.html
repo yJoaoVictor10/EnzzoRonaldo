@@ -7,7 +7,57 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
     </head> 
 
+    <style>
+        .titulo{
+            border: black solid 1px;
+            font-size:small;
+            background-color:dodgerblue;
+        }
+
+        .btn1{
+            color: black;
+            background-color:cornflowerblue;
+        }
+
+        .btn2{
+            color: black;
+            background-color:dodgerblue;
+        }
+    </style>
+
     <body>
-        
+        <div class="titulo text-center">
+            <h1>Dados do vendedor</h1>
+        </div>
+
+            <div class="container">
+                <form class="formulario" method="post" action="#">
+                    <div class="mb-3">
+                        <label for="txtNome" class="form-label" id="lblNome">Nome</label>
+                        <input type="text" class="form-control" id="txtNome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtIdade" class="form-label" id="lblIdade">Idade</label>
+                        <input type="text" class="form-control" id="txtIdade">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtCPF" class="form-label" id="lblCPF">CPF</label>
+                        <input type="text" class="form-control" id="txtCPF">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtVlrHora" class="form-label" id="lblVlrHora">Valor da hora</label>
+                        <input type="text" class="form-control" id="txtVlrHora">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtHrTrabalhadas" class="form-label" id="lblHrTrabalhadas">Horas trabalhadas</label>
+                        <input type="text" class="form-control" id="txtHrTrabalhadas">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <input type="submit" class="btn1 btn btn-primary" value="LIMPAR">
+                        <input type="submit" class="btn2 btn btn-primary" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </form>
     </body>
     </html>
