@@ -7,7 +7,71 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
     </head> 
 
-    <body>
+    <style>
+        .titulo{
+            border: black solid 1px;
+            font-size:small;
+            background-color:dodgerblue;
+        }
+
+        .apresentacao{
+            margin-top: 15px;
+            color: dodgerblue;
+        }
+
+        .formulario{
+            margin-top: 80px;
+            margin-left: 25px;
+            width: 40%;
+        }
+
+        .imagens{
+            margin-top: 25px;
+            display: flex;
+        }
+
+        .imagem1, .imagem2 {
+            width: 70%;
+        }
         
+        
+    </style>
+
+    <body>
+        <div class="titulo text-center"></div>
+            <h1>Loja de Jogos</h1>
+        </div>
+
+            <h4 class="apresentacao text-center">Seja bem vindo(a) à loja de jogos</h4>
+            <form class="formulario" method="post" action="#">
+                <div class="escolha">
+                    <h4>Escolha a tela de cadastro desejada:</h4>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escolhaTela" id="RadioCliente">
+                    <label class="form-check-label lead" for="RadioCliente">Cliente</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escolhaTela" id="RadioVendedor">
+                    <label class="form-check-label lead" for="RadioVendedor">Vendedor</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escolhaTela" id="RadioJogo">
+                    <label class="form-check-label lead" for="RadioJogo">Jogo</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escolhaTela" id="RadioEncerrar">
+                    <label class="form-check-label lead" for="RadioEncerrar">Encerrar</label>
+                </div>
+                <div class="imagens">
+                    <img src="imagem/imagem1.jpg" alt="controle/celular" class="imagem1">
+                    <img src="imagem/imagem2.jpg" alt="jogo" class="imagem2">
+                </div>
+                
+                
+            </form>
     </body>
     </html>
